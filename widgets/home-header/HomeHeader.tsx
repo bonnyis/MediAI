@@ -18,12 +18,20 @@ const homeHeader = () => {
 
         <nav className="w-3/4 hidden md:block">
           <ul className="flex items-center justify-end gap-8">
-            <li>서비스 소개</li>
-            <li>의사 로그인</li>
+            <li className="min-w-30">
+              <Link href="/">서비스 소개</Link>
+            </li>
             <li>
-              <button className="h-12 rounded-md border-white px-6 bg-point text-white">
-                문진 시작하기
+              <button className="h-12 rounded-md border-white px-6 bg-doctor text-white">
+                의사 로그인
               </button>
+            </li>
+            <li>
+              <Link href="/interview">
+                <button className="h-12 rounded-md border-white px-6 bg-point text-white">
+                  문진 시작하기
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>

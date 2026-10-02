@@ -1,4 +1,4 @@
-import HomePage from "@/pages/home/HomePage";
+import HomePage from "@/screens/patient/home/HomePage";
 
 const page = () => {
   return <HomePage />;

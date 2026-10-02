@@ -27,7 +27,7 @@ const homeHeader = () => {
               </button>
             </li>
             <li>
-              <Link href="/interview">
+              <Link href="/interview?step=1">
                 <button className="h-12 rounded-md border-white px-6 bg-point text-white">
                   문진 시작하기
                 </button>

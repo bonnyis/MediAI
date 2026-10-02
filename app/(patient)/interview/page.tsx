@@ -1,4 +1,4 @@
-import InterviewModalIndex from "@/pages/interview/InterviewModalIndex";
+import InterviewModalIndex from "@/screens/patient/interview/InterviewModalIndex";
 
 const page = () => {
   return <InterviewModalIndex />;

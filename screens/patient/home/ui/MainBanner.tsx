@@ -1,6 +1,7 @@
 import Image from "next/image";
 import illurst from "@/public/images/illur.png";
 import { ArrowRight } from "lucide-react";
+
 const MainBanner = () => {
   return (
     <div className="main-bg h-[calc(100dvh-5rem)] overflow-hidden relative">

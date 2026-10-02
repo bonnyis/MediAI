@@ -1,4 +1,8 @@
+"use client";
+import { useState } from "react";
 const InterviewStep1 = () => {
+  const [symptom, setSymptom] = useState<string>("");
+  const [duration, setDuration] = useState<string>("");
   return (
     <div className="">
       <div className="flex flex-col gap-5">
@@ -19,6 +23,9 @@ const InterviewStep1 = () => {
               name="symptom"
               placeholder="예: 두통, 복통, 발열 등"
               className="w-full rounded-md border border-gray-300 p-2 focus:border-point focus:ring focus:ring-point/50 h-20"
+              autoComplete="off"
+              value={symptom}
+              onChange={(e) => setSymptom(e.target.value)}
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -28,9 +35,12 @@ const InterviewStep1 = () => {
             <input
               type="text"
               id="duration"
+              value={duration}
+              onChange={(e) => setDuration(e.target.value)}
               placeholder="예: 2일 전, 1주 전 등"
               className="w-full rounded-md border border-gray-300 p-2 focus:border-point focus:ring focus:ring-point/50 "
-            ></input>
+              autoComplete="off"
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import illurst from "@/public/images/illur.png";
 import { ArrowRight } from "lucide-react";
-
+import Link from "next/link";
 const MainBanner = () => {
   return (
     <div className="main-bg h-[calc(100dvh-5rem)] overflow-hidden relative">
@@ -18,10 +18,12 @@ const MainBanner = () => {
           <p className="">의료인의 진료를 더 효율적으로 돕습니다.</p>
         </div>
         <div className="flex gap-4 text-lg flex-col md:flex-row">
-          <button className="h-12 rounded-md border-white px-6 bg-point text-white flex gap-2 justify-between items-center">
-            문진 시작하기
-            <ArrowRight size={18} />
-          </button>
+          <Link href="/interview?step=1">
+            <button className="h-12 rounded-md border-white px-6 bg-point text-white flex gap-2 justify-between items-center">
+              문진 시작하기
+              <ArrowRight size={18} />
+            </button>
+          </Link>
 
           <button className="h-12 rounded-md px-6 bg-white">의사 로그인</button>
         </div>
